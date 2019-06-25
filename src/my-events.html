@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>My events</title>
+
+</head>
+<body>
+<div class="main">
+    @@include('templates/menu.html')
+    <div class="container flex-container">
+        <div class="sidebar profile-sidebar mt15">
+            <div class="profile-photo">
+                <img src="img/photo.jpg" alt="">
+            </div>
+            <p class="profile-name">Dumitru Birchin</p>
+            <p class="profile-p">Perfume Tips Tricks</p>
+            <div class="connection-views">
+                <div class="connection-views_block">
+                    <p class="connection-views_number">649</p>
+                    <p class="profile-p">Connections</p>
+                </div>
+                <div class="connection-views_block">
+                    <p class="connection-views_number">149</p>
+                    <p class="profile-p">Views</p>
+                </div>
+            </div>
+            <button class="btn btn-white">View my profile</button>
+        </div><!-- END .sidebar profile-sidebar -->
+        <div class="center-container mt15">
+            <div class="inner-content">
+                @@include('templates/events-list.html')
+            </div>
+
+        </div>
+        <div class="sidebar-calendar">
+            @@include('templates/past-event-sidebar.html')
+        </div>
+
+
+    </div>
+
+
+</div>
+
+@@include('templates/footer.html')
+</body>
+</html>

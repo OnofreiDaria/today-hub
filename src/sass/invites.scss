@@ -1,0 +1,69 @@
+.invite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 0 30px;
+  border-bottom: 1px solid #efefef;
+
+  .p-going {
+    font-size: 14px;
+    font-weight: 700;
+    flex: 0 0 calc((100% - 370px) / 3);
+    padding-left: 7px;
+  }
+
+  .invite-descr {
+    font-size: 12px;
+    flex: 0 0 calc((100% - 370px) / 3);
+  }
+  .people {
+    flex: 0 0 calc((100% - 370px) / 3);
+    padding-right: 7px;
+  }
+  .btn {
+    flex: 0 0 185px;
+    margin: 0 5px;
+  }
+}
+
+/********************************************* MEDIA *********************************************/
+
+
+@media all and (max-width: 850px) {
+  .invite {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    .p-going,
+    .invite-descr,
+    .people {
+      flex: 0 0 33.33%;
+    }
+  }
+}
+
+@media all and (max-width: 650px) {
+  .invite {
+    .p-going,
+    .invite-descr{
+      flex: 0 0 50%;
+      padding-bottom: 10px;
+    }
+    .people {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .invite {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px 0;
+    .btn {
+      flex: auto;
+      margin-bottom: 10px;
+    }
+  }
+}

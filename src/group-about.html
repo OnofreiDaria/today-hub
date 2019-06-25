@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>About Group</title>
+
+</head>
+<body>
+<div class="main">
+    @@include('templates/menu.html')
+    <div class="container">
+        @@include('templates/header.html')
+
+        <div class="flex-container">
+            <div class="sidebar-container">
+                <div class="sidebar sidebar-groups">
+                    <h6 class="title">Photos(<span class="photo-num">6</span>)</h6>
+                    <div class="img-sidebar">
+                        <img src="img/exp2.jpg" alt="">
+                    </div>
+                    <div class="img-sidebar">
+                        <img src="img/exp4.jpg" alt="">
+                    </div>
+                    <a class="see-all-link" href="">See all</a>
+                </div>
+                @@include('templates/past-event-sidebar.html')
+                <div class="sidebar sidebar-groups">
+                    <h6 class="title">Related topics</h6>
+                    <ul>
+                        <li class="related-topic"><a href="">Open Surce</a></li>
+                        <li class="related-topic"><a href="">Big data</a></li>
+                        <li class="related-topic"><a href="">Data analytics</a></li>
+                        <li class="related-topic"><a href="">PHP</a></li>
+                        <li class="related-topic"><a href="">Artificial Intellegence Web</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="center-container">
+                <div class="inner-content mt15 about-group">
+                    <h5><b>Chisinau AI and Machine learning meetup</b></h5>
+                    <p>
+                        MCSE boot camps have its supporters and its detractors.
+                        Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself
+                        at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training?
+                        Not too many people! That is what the MCSE boot camps are for.
+                    </p>
+                    <p>
+                        These boot camps are typically an intense two-week long MCSE training course that prepares you for the MCSE exams.
+                        Some companies that conduct boot camps offering Microsoft certification, especially the MCSE, guarantee that you will pass your MCSE exams.
+                        If you happen to fail, they will usually issue a voucher to try it again.
+                        For many people who attend these MCSE boot camps, it is preferable to have an intense two weeks with little to distract you rather than
+                        drawing out the classes for weeks with outside influences like work and family interfering with study time.
+                        Sure, being gone for two weeks is a temporary hassle, but you will have your certification in a fraction of the time.
+                    </p>
+                    <p>
+                        Did you catch the being gone for two weeks bit?
+                        You can probably find a boot camp near your home, but most likely you will end up attending an MCSE boot camp away from your home,
+                        far enough away where it is not worth it to commute. Two weeks away from home? That doesn’t sound like a picnic!
+                        But just think of the rewards you will reap after trudging through all that MCSE training and taking the MCSE exams.
+                    </p>
+                    <p>
+                        If you are lucky, your company will pick up the tab on your Microsoft certification.
+                        Paying on your own is a major investment, usually a few thousand dollars depending on where the location is and if
+                        hotel and meals are included in the price. For your money, you will get a tough instructor,
+                        an MCSE drill sergeant for lack of a better description. That instructor’s reputation is on the line,
+                        so he or she will be motivated to ensure your success. That is why the success rate for these MCSE boot camps is high,
+                        in some places as high as 95%!
+                    </p>
+                    <p>
+                        For your investment, you will have numerous MCSE training sessions in Networking Basics as well as
+                        learning about the infrastructure of a network. You will study security design, directories and how to manage
+                        Windows network environments. Hands-on training in learning labs with after-hours access for extra practice is the norm.
+                        Practice MCSE exams are also given out as a study tool and to also help prepare you for your own test time.
+                    </p>
+                </div>
+
+            </div><!-- END .center-container -->
+            <div class="sidebar-container">
+                <div class="sidebar sidebar-groups">
+                    <h6 class="title">Members(<span class="num-members">69</span>)</h6>
+                    <div class="people">
+                        <div class="profile-photo photo-small">
+                            <img src="img/photo.jpg" alt="">
+                        </div>
+                        <a href="" class="link-name">Edgar Ray</a>
+                        <p class="text-grey">Restorative Dentist New York</p>
+                    </div>
+                    <div class="people">
+                        <div class="profile-photo photo-small">
+                            <img src="img/photo.jpg" alt="">
+                        </div>
+                        <a href="" class="link-name">Rosie Hubbard</a>
+                        <p class="text-grey">There Is No Competition</p>
+                    </div>
+                    <div class="people">
+                        <div class="profile-photo photo-small">
+                            <img src="img/photo.jpg" alt="">
+                        </div>
+                        <a href="" class="link-name">Ola Brock</a>
+                        <p class="text-grey">Radio Astronomy</p>
+                    </div>
+                    <div class="people">
+                        <div class="profile-photo photo-small">
+                            <img src="img/photo.jpg" alt="">
+                        </div>
+                        <a href="" class="link-name">Lois McCarthy</a>
+                        <p class="text-grey">Billboard Advertising</p>
+                    </div>
+                    <a class="see-all-link" href="">See all</a>
+                </div><!-- END .sidebar sidebar-right -->
+                @@include('templates/sidebar-similar-events.html')
+            </div>
+
+        </div>
+    </div><!-- END .container -->
+
+</div>
+
+@@include('templates/footer.html')
+</body>
+</html>

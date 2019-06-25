@@ -1,0 +1,67 @@
+<div class="container flex-container">
+    @@include('profile-sidebar.html')
+    <div class="center-container">
+
+        <div class="tabs calendar-tabs inner-tabs">
+            <ul>
+                <li>
+                    <a href="#allMeetups">All meetups</a>
+                </li>
+                <li>
+                    <a href="#suggestionMeetups">Suggestions</a>
+                </li>
+                <li>
+                    <a href="#myMeetups">My meetups</a>
+                </li>
+                <li>
+                    <a href="#goingMeetups">I’m going</a>
+                </li>
+
+            </ul>
+            <div id="allMeetups">
+                <div class="inner-tabs_info">
+                    <p class="text-blue">23 meetups</p>
+                </div>
+                <div class="inner-content mt15">
+                    @@include('events-list.html')
+                </div>
+
+
+            </div><!-- END #allMeetups -->
+            <div id="suggestionMeetups">
+                <div class="inner-tabs_info">
+                    <p class="text-blue">5 meetups</p>
+                </div>
+                <div class="inner-content mt15">
+                    @@include('events-list.html')
+                </div>
+
+            </div>
+            <div id="myMeetups">
+                <div class="inner-tabs_info">
+                    <p class="text-blue">29 meetups</p>
+                </div>
+                <div class="inner-content mt15">
+                    @@include('events-list.html')
+                </div>
+            </div>
+            <div id="goingMeetups">
+                <div class="inner-tabs_info">
+                    <p class="text-blue">7 meetups</p>
+                </div>
+                <div class="inner-content mt15">
+                    @@include('events-list.html')
+                </div>
+
+            </div>
+
+        </div>
+
+    </div><!-- END .center-container -->
+    <div class="sidebar-calendar">
+        <div class="sidebar-btn">
+            <button class="btn btn-blue btn-lg">Start a Meetup Group</button>
+        </div>
+        <div class="datepicker"></div>
+    </div><!-- END .sidebar-calendar -->
+</div><!-- END .container -->

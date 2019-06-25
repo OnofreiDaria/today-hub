@@ -1,0 +1,251 @@
+.messages-list {
+  .people-list {
+    p {
+      img {
+        width: 14px;
+        height: auto;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+      i {
+        font-size: 14px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.message-container {
+  .search-header {
+    padding: 30px 0;
+  }
+  .ui-menu .ui-menu-item {
+    font-size: 18px;
+    color: #0054f0;
+  }
+  .ui-selectmenu-icon.ui-icon {
+    background-image: none;
+    width: 5px;
+    height: 5px;
+    top: 4px;
+    border-top: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+    transform: rotate(-135deg);
+  }
+  .ui-selectmenu-button.ui-button {
+    width: auto;
+    font-size: 18px;
+    color: #0054f0;
+    background: transparent;
+    border: 0;
+    .ui-selectmenu-icon.ui-icon {
+      width: 6px;
+      height: 6px;
+      border-color: #1b1d1f;
+    }
+  }
+
+}
+input[type=text].search-msg{
+  width: 100%;
+  font-size: 14px;
+  border: 0;
+  color: #1b1d1f;
+  background: transparent url(../img/search.png) no-repeat 10px 0px;
+  background-size: 14px;
+  padding: 7px 5px 25px 40px;
+}
+.msg-wrapper {
+  width: 100%;
+  max-width: 1180px;
+  margin: auto;
+  display: flex;
+  background: #fff;
+  border: 1px solid #efefef;
+  .people {
+    border-top: 1px solid #efefef;
+    padding-left: 25px;
+  }
+  hr {
+    width: 100%;
+    height: 1px;
+    background: #efefef;
+    border: 0;
+  }
+}
+.search_msg,
+.msg-person {
+  width: 25%;
+  padding-top: 20px;
+}
+.msgs-block {
+  width: 50%;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  padding-top: 20px;
+}
+.inbox_msg {
+  width: 100%;
+}
+.incoming_msg_img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  img {
+    width: 100%;
+  }
+}
+.received_msg {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  vertical-align: top;
+  width: 92%;
+  img{
+    width: 150px;
+    height: auto;
+  }
+}
+.received_withd_msg p {
+  background: #f8f9fa;
+  border: 1px solid #efefef;
+  color: #a1a1a1;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+}
+.received_withd_msg { width: 57%;}
+.mesgs {
+  float: left;
+  padding: 30px 15px 0 25px;
+}
+
+.sent_msg p {
+  background: #0054f0;
+  border: 1px solid #efefef;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  color:#fff;
+  padding: 5px 10px 5px 12px;
+  width:100%;
+}
+.outgoing_msg{ overflow:hidden; margin:26px 0 26px;}
+.sent_msg {
+  float: right;
+  width: 46%;
+}
+.input_msg_write {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .write_msg {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    font-size: 15px;
+    min-height: 48px;
+    width: 100%;
+  }
+}
+
+.type_msg {border-top: 1px solid #c4c4c4;position: relative;}
+.ui-widget .custom-file-input {
+  color: transparent;
+  width: 25px;
+  height: 25px;
+}
+.file-container{
+  display: flex;
+  align-items: center;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+  width: 25px;
+  height: 25px;
+}
+.add-file:before {
+  content:url("../img/clip.png");
+  height: 14px;
+  width: 14px;
+}
+.add-img:before{
+  content:url("../img/landscape2.png");
+  height: 14px;
+  width: 14px;
+}
+.messaging { padding: 0 0 50px 0;}
+.msg_history {
+  height: 516px;
+  overflow-y: scroll;
+
+}
+.msg-date {
+  text-align: center;
+  padding: 10px;
+}
+
+/********************************************* MEDIA *********************************************/
+@media all and (max-width: 850px) {
+  .msg-wrapper{
+    .search_msg {
+      width: 65px;
+    }
+    input[type=text].search-msg{
+      display: none;
+    }
+    .people {
+      border-top: 0;
+      padding-left: 10px;
+      a, p {
+        display: none;
+      }
+    }
+    .msg-person{
+      width: 205px;
+    }
+    .msgs-block{
+      width:calc(100% - 285px);
+    }
+  }
+
+
+}
+@media all and (max-width: 767px) {
+  .msg-wrapper{
+    .msg-person{
+      display: none;
+    }
+    .msgs-block{
+      width:calc(100% - 80px);
+    }
+  }
+  .received_withd_msg,
+  .sent_msg{
+    width: 75%;
+  }
+}
+@media all and (max-width: 550px) {
+  .received_withd_msg,
+  .sent_msg{
+    width: 100%;
+  }
+}
+@media all and (max-width: 480px) {
+  .msg-wrapper{
+    flex-direction: column;
+    .msgs-block{
+      width: 100%;
+    }
+    .search_msg{
+      width: 100%;
+      border-bottom: 1px solid #efefef;
+    }
+    .people{
+      height: 45px;
+      display: inline-block;
+    }
+  }
+}

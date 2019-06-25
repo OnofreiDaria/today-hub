@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>About Group</title>
+
+</head>
+<body>
+<div class="main">
+    @@include('templates/menu.html')
+    <div class="container">
+        @@include('templates/header.html')
+
+        <div class="flex-container">
+            <div class="sidebar-container">
+                @@include('templates/past-event-sidebar.html')
+            </div>
+
+            <div class="center-container">
+                <div class="inner-content mt15 ">
+                    <ul>
+                        <li class="people-list">
+                            <div class="people">
+                                <div class="profile-photo photo-small">
+                                    <img src="img/photo.jpg" alt="">
+                                </div>
+                                <a href="" class="link-name">Ola Brock</a>
+                                <p class="text-grey">Radio Astronomy</p>
+                            </div>
+                            <p class="text-grey">23 minutes</p>
+                        </li>
+                        <li class="people-list">
+                            <div class="people">
+                                <div class="profile-photo photo-small">
+                                    <img src="img/photo.jpg" alt="">
+                                </div>
+                                <a href="" class="link-name">Ola Brock</a>
+                                <p class="text-grey">Radio Astronomy</p>
+                            </div>
+                            <p class="text-grey">23 minutes</p>
+                        </li>
+                    </ul>
+                    <textarea placeholder="Add comment" class="add-comment"></textarea>
+
+                </div>
+
+            </div><!-- END .center-container -->
+            <div class="sidebar-container">
+                @@include('templates/sidebar-similar-events.html')
+            </div>
+
+        </div>
+    </div><!-- END .container -->
+
+</div>
+
+@@include('templates/footer.html')
+</body>
+</html>

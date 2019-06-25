@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>Feed</title>
+
+</head>
+<body>
+<div class="main">
+    @@include('templates/menu.html')
+
+    <div class="tabs main-tabs">
+        <ul>
+            <li><a href="#feed">Feed</a></li>
+            <li><a href="#groups">Groups</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#articles">Articles</a></li>
+        </ul>
+        <div id="feed">
+            <div class="container flex-container">
+                <div class="sidebar profile-sidebar">
+                    <div class="profile-photo">
+                        <img src="img/photo.jpg" alt="">
+                    </div>
+                    <p class="profile-name">Dumitru Birchin</p>
+                    <p class="profile-p">Perfume Tips Tricks</p>
+                    <div class="connection-views">
+                        <div class="connection-views_block">
+                            <p class="connection-views_number">649</p>
+                            <p class="profile-p">Connections</p>
+                        </div>
+                        <div class="connection-views_block">
+                            <p class="connection-views_number">149</p>
+                            <p class="profile-p">Views</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-white">View my profile</button>
+                </div><!-- END .sidebar profile-sidebar -->
+                <div class="center-container">
+                        <div class="tabs inner-tabs">
+                            <ul>
+                                <li><a href="#update">
+                                    <img src="img/pencil.png" alt="" class="tab-icon">
+                                    Share an update </a>
+                                </li>
+                                <li><a href="#photo">
+                                    <img src="img/landscape.png" alt="" class="tab-icon">
+                                    Upload a photo</a>
+                                </li>
+                                <li><a href="#article">
+                                    <img src="img/book.png" alt="" class="tab-icon">
+                                    Write an article</a>
+                                </li>
+                            </ul>
+                            <div id="update">
+                                <div class="inner-tabs_info">
+                                    <textarea placeholder="Write something"></textarea>
+                                </div>
+                                <div class="inner-content mt15">
+                                    <div class="short-post short-post-without-photo">
+                                        <div class="short-post_header short-post_person">
+                                            <div class="people">
+                                                <div class="profile-photo photo-small">
+                                                    <img src="img/photo.jpg" alt="">
+                                                </div>
+                                                <a href="" class="link-name">Edgar Ray</a>
+                                                <p class="text-grey">Restorative Dentist New York</p>
+                                            </div>
+                                            <p class="time text-grey">23 minutes</p>
+                                        </div>
+                                        <div class="short-post_body">
+                                            <p>How do you create a direct mail advertising campaign that gets results? The following tips on creating a direct mail advertising campaign have been street-tested and will bring you huge returns in a short period of time.
+                                                In Fact, these tips enabled me to generate over $47,000 in mortgage commissions in less than 30 days! Keep reading and I will share 3 key elements to creating an effective direct mail advertising campaign.</p>
+                                        </div>
+                                        <div class="short-post_footer">
+                                            <div class="btn-container">
+                                                <button class="btn btn-activity btn-like">
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    <span class="number-likes">3</span>
+                                                </button>
+                                                <button class="btn btn-activity">
+                                                    <!--                                        <i class="fa fa-comment-o" aria-hidden="true"></i>-->
+                                                    <img src="img/post-message.png" alt="">
+                                                    <span>2</span>
+                                                </button>
+                                                <button class="btn btn-activity">
+                                                    <img src="img/share.png" alt="">
+                                                </button>
+                                            </div>
+                                            <button class="btn btn-activity btn-more">
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="short-post_comments">
+                                            <div class="short-post_person">
+                                                <div class="people">
+                                                    <div class="profile-photo photo-comment">
+                                                        <img src="img/photo.jpg" alt="">
+                                                    </div>
+                                                    <a href="" class="link-name">Edgar Ray</a>
+                                                    <p class="text-grey">Restorative Dentist New York</p>
+                                                </div>
+                                                <p class="time text-grey">23 minutes</p>
+                                            </div><!-- END .short-post_person -->
+                                            <div class="short-post_person">
+                                                <div class="people">
+                                                    <div class="profile-photo photo-comment">
+                                                        <img src="img/photo.jpg" alt="">
+                                                    </div>
+                                                    <a href="" class="link-name">Edgar Ray</a>
+                                                    <p class="text-grey">Restorative Dentist New York</p>
+                                                </div>
+                                                <p class="time text-grey">23 minutes</p>
+                                            </div><!-- END .short-post_person -->
+                                            <textarea placeholder="Add comment" class="add-comment"></textarea>
+                                        </div><!-- END .short-post_comments -->
+                                    </div><!-- END .short-post.short-post-without-photo -->
+                                </div><!-- END .inner-content -->
+
+                                <div class="inner-content mt15">
+                                    <div class="short-post short-post-with-photo">
+                                        <div class="short-post_header short-post_person">
+                                            <div class="people">
+                                                <div class="profile-photo photo-small">
+                                                    <img src="img/photo.jpg" alt="">
+                                                </div>
+                                                <a href="" class="link-name">Edgar Ray</a>
+                                                <p class="text-grey">Restorative Dentist New York</p>
+                                            </div>
+                                            <p class="time text-grey">23 minutes</p>
+                                        </div>
+                                        <div class="short-post_body">
+                                            <p>Adwords Keyword Research For Beginners: <a href="">wwww.google.com</a></p>
+                                            <img src="img/exp.jpg" alt="">
+                                        </div>
+                                        <div class="short-post_footer">
+                                            <div class="btn-container">
+                                                <button class="btn btn-activity btn-like">
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    <span class="number-likes">3</span>
+                                                </button>
+                                                <button class="btn btn-activity">
+                                                    <!--                                        <i class="fa fa-comment-o" aria-hidden="true"></i>-->
+                                                    <img src="img/post-message.png" alt="">
+                                                    <span>2</span>
+                                                </button>
+                                                <button class="btn btn-activity">
+                                                    <img src="img/share.png" alt="">
+                                                </button>
+                                            </div>
+                                            <button class="btn btn-activity btn-more">
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="short-post_comments">
+                                            <div class="short-post_person">
+                                                <div class="people">
+                                                    <div class="profile-photo photo-comment">
+                                                        <img src="img/photo.jpg" alt="">
+                                                    </div>
+                                                    <a href="" class="link-name">Edgar Ray</a>
+                                                    <p class="text-grey">Restorative Dentist New York</p>
+                                                </div>
+                                                <p class="time text-grey">23 minutes</p>
+                                            </div><!-- END .short-post_person -->
+                                            <div class="short-post_person">
+                                                <div class="people">
+                                                    <div class="profile-photo photo-comment">
+                                                        <img src="img/photo.jpg" alt="">
+                                                    </div>
+                                                    <a href="" class="link-name">Edgar Ray</a>
+                                                    <p class="text-grey">Restorative Dentist New York</p>
+                                                </div>
+                                                <p class="time text-grey">23 minutes</p>
+                                            </div><!-- END .short-post_person -->
+                                            <textarea placeholder="Add comment" class="add-comment"></textarea>
+                                        </div><!-- END .short-post_comments -->
+                                    </div><!-- END .short-post.short-post-without-photo -->
+                                </div><!-- END .inner-content -->
+
+                                <div class="inner-content mt15">
+                                    <div class="short-post short-post-with-photo">
+                                        <div class="short-post_header short-post_person">
+                                            <div class="people">
+                                                <div class="profile-photo photo-small">
+                                                    <img src="img/photo.jpg" alt="">
+                                                </div>
+                                                <a href="" class="link-name">Edgar Ray</a>
+                                                <p class="text-grey">Forehead Lift Brow Lift Temporal Lift Forhead Rejuvenation</p>
+                                            </div>
+                                            <p class="time text-grey">2 minutes</p>
+                                        </div>
+                                        <div class="short-post_body">
+                                            <p>Adwords Keyword Research For Beginners: <a href="">wwww.google.com</a></p>
+                                            <a class="share-post">
+                                                <div class="share-post_img">
+                                                    <img src="img/exp.jpg" alt="">
+                                                </div>
+                                                <div class="share-post-text">
+                                                    <h6>Logan Sanders</h6>
+                                                    <p>When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing the video game Paperboy, so I knew I had what it took to get the job done. But, its just not that easy. The StarTribune doesn’t just hand out the responsibility of informing their community’s citizenry on a daily…</p>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                        <div class="short-post_footer">
+                                            <div class="btn-container">
+                                                <button class="btn btn-activity btn-like">
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    <span class="number-likes">3</span>
+                                                </button>
+                                                <button class="btn btn-activity">
+                                                    <!--                                        <i class="fa fa-comment-o" aria-hidden="true"></i>-->
+                                                    <img src="img/post-message.png" alt="">
+                                                    <span>2</span>
+                                                </button>
+                                                <button class="btn btn-activity">
+                                                    <img src="img/share.png" alt="">
+                                                </button>
+                                            </div>
+                                            <button class="btn btn-activity btn-more">
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="short-post_comments">
+                                            <div class="short-post_person">
+                                                <div class="people">
+                                                    <div class="profile-photo photo-comment">
+                                                        <img src="img/photo.jpg" alt="">
+                                                    </div>
+                                                    <a href="" class="link-name">Edgar Ray</a>
+                                                    <p class="text-grey">Restorative Dentist New York</p>
+                                                </div>
+                                                <p class="time text-grey">23 minutes</p>
+                                            </div><!-- END .short-post_person -->
+                                            <div class="short-post_person">
+                                                <div class="people">
+                                                    <div class="profile-photo photo-comment">
+                                                        <img src="img/photo.jpg" alt="">
+                                                    </div>
+                                                    <a href="" class="link-name">Edgar Ray</a>
+                                                    <p class="text-grey">Restorative Dentist New York</p>
+                                                </div>
+                                                <p class="time text-grey">23 minutes</p>
+                                            </div><!-- END .short-post_person -->
+                                            <textarea placeholder="Add comment" class="add-comment"></textarea>
+                                        </div><!-- END .short-post_comments -->
+                                    </div><!-- END .short-post.short-post-without-photo -->
+                                </div><!-- END .inner-content -->
+
+                            </div>
+                            <div id="photo">
+                                <div class="inner-tabs_info">
+                                    <div class="file-upload">
+                                        <button class="file-upload-btn btn-blue btn-lg" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+
+                                        <div class="image-upload-wrap">
+                                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                                            <div class="drag-text">
+                                                <i class="fa fa-camera" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="file-upload-content">
+                                            <img class="file-upload-image" src="#" alt="your image" />
+                                            <div class="image-title-wrap">
+                                                <button type="button" onclick="removeUpload()" class="remove-image btn-md">Remove <span class="image-title">Uploaded Image</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="article">
+                                <div class="inner-tabs_info">
+                                    <form method="post">
+                                        <textarea id="summernote" name="editordata"></textarea>
+                                        <button type="submit" class="btn btn-blue btn-sm">Publish</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                </div><!-- END .center-container -->
+
+                <div class="sidebar sidebar-right">
+                    <h6 class="title">Keep in touch</h6>
+                    <div class="people">
+                        <div class="profile-photo photo-small">
+                            <img src="img/photo.jpg" alt="">
+                        </div>
+                        <a href="" class="link-name">Edgar Ray</a>
+                        <p class="text-grey">Restorative Dentist New York</p>
+                    </div>
+                    <div class="people">
+                        <div class="profile-photo photo-small">
+                            <img src="img/photo.jpg" alt="">
+                        </div>
+                        <a href="" class="link-name">Rosie Hubbard</a>
+                        <p class="text-grey">There Is No Competition</p>
+                    </div>
+                    <div class="people">
+                        <div class="profile-photo photo-small">
+                            <img src="img/photo.jpg" alt="">
+                        </div>
+                        <a href="" class="link-name">Ola Brock</a>
+                        <p class="text-grey">Radio Astronomy</p>
+                    </div>
+                    <div class="people">
+                        <div class="profile-photo photo-small">
+                            <img src="img/photo.jpg" alt="">
+                        </div>
+                        <a href="" class="link-name">Lois McCarthy</a>
+                        <p class="text-grey">Billboard Advertising</p>
+                    </div>
+                </div><!-- END .sidebar sidebar-right -->
+            </div><!-- END .container.flex-container -->
+        </div><!-- END #feed -->
+        <div id="groups">
+            @@include('templates/groups.html')
+
+        </div><!-- END #groups -->
+        <div id="calendar">
+            @@include('templates/calendar.html')
+        </div>
+        <div id="articles">
+            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+        </div>
+    </div>
+
+</div>
+
+@@include('templates/footer.html')
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* EVENT LIST */
+.events {
+  padding-bottom: 30px;
+}
+.event {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+}
+.event_description {
+  h6 {
+    margin-bottom: 0;
+    a {
+      &:hover,
+      &:active,
+      &:focus {
+        color: #e1bb00;
+      }
+    }
+  }
+}
+.event_date {
+  text-align: right;
+  p {
+    font-size: 12px;
+  }
+}
+
+/* CALENDAR */
+.big-calendar {
+  .ui-datepicker {
+    padding-bottom: 15px;
+    .ui-datepicker-header {
+      padding: 10px;
+    }
+    .ui-datepicker-title {
+      font-size: 16px;
+
+    }
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+      top: 16px;
+    }
+    th,
+    .ui-state-default, .ui-widget-content .ui-state-default {
+      font-size: 14px;
+    }
+    td {
+      padding: 7px 0;
+    }
+  }
+}
+
+
+.ui-datepicker {
+  width: 100%;
+  font-weight: 400;
+  font-family: 'lato', sans-serif;
+  margin-top: 15px;
+  .ui-widget-header .ui-state-hover {
+    background: transparent;
+    border: 0;
+  }
+  .ui-datepicker-title {
+    font-size: 12px;
+    color: #0054f0;
+    font-family: 'lato-light', sans-serif;
+  }
+  thead {
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+  }
+  th {
+    font-size: 10px;
+    color: #999999;
+    font-family: 'lato-light', sans-serif;
+  }
+  .ui-state-default, .ui-widget-content .ui-state-default {
+    background: #fff;
+    border: 0;
+    font-size: 10px;
+    text-align: center;
+  }
+  .ui-state-active,  .ui-widget-content .ui-state-active {
+    background: rgba(0, 84, 240, .1)!important;
+    color: #0054f0;
+  }
+  td{
+    padding: 3px;
+  }
+  &.ui-widget.ui-widget-content {
+    border: 1px solid #e8e8e8;
+  }
+
+}
+.ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-prev {
+  top: 5px;
+}
+.ui-datepicker-prev span {
+  background-image: none;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #bfbfbf;
+  border-left: 1px solid #bfbfbf;
+  transform: rotate(-45deg);
+}
+
+.ui-datepicker-next span {
+  background-image: none;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #bfbfbf;
+  border-left: 1px solid #bfbfbf;
+  transform: rotate(135deg);
+}
+.sidebar-btn {
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #efefef;
+}
+/********************************************* MEDIA *********************************************/
+
+@media all and (max-width: 550px) {
+  .event {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .event_date {
+    order: -1;
+    align-self: flex-end;
+    margin-bottom: 7px;
+  }
+}

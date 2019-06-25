@@ -1,0 +1,393 @@
+.sidebar {
+  flex: 0 0 260px;
+  background: #fff;
+  border: 1px solid #efefef;
+  padding-top: 30px;
+}
+.profile-photo {
+  width: 99px;
+  height: 99px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  &.photo-small {
+    width: 44px;
+    height: 44px;
+    float: left;
+    margin-right: 10px;
+    img {
+      width: 44px;
+      height: 44px;
+    }
+  }
+  &.photo-comment {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 6px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  img {
+    width: 99px;
+    height: 99px;
+    vertical-align: middle;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.link-name {
+  color: #1b1d1f;
+  font-size: 12px;
+  font-weight: 700;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #e1bb00;
+  }
+}
+.profile-name,
+.connection-views_number{
+  color: #1b1d1f;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+.profile-p {
+  color: #a1a1a1;
+  font-size: 12px;
+  text-align: center;
+}
+.connection-views {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  margin-top: 30px;
+
+}
+.connection-views_block {
+  flex: 0 0 50%;
+  padding: 10px 0;
+  &:first-of-type {
+    border-right: 1px solid #efefef;
+  }
+}
+.center-container {
+  margin: 0 15px;
+  flex: 0 0 calc(100% - 550px);
+  &.mt15 {
+    margin: 15px 15px 0;
+  }
+}
+.inner-content {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #efefef;
+  padding: 0 30px;
+}
+
+.sidebar-right {
+  padding: 30px;
+}
+.people {
+  padding: 10px 0;
+  p {
+    padding-left: 54px;
+  }
+}
+
+/* UPLOAD PHOTO */
+
+.file-upload {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  background: #f7f8f9;
+  position: relative;
+  border: 1px solid #efefef;
+}
+
+
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+  font-size: 80px;
+  color: #a1a1a1;
+  padding: 60px;
+}
+
+
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  background: #cd4535;
+  color: #fff;
+  border: 1px solid #efefef;
+  -webkit-box-shadow: 0 0 1px #a4a4a4;
+  box-shadow: 0 0 1px #a4a4a4;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+.note-editor.note-frame {
+  border: 0;
+}
+.note-editor.note-frame .note-statusbar .note-resizebar {
+  display: none;
+}
+.note-editor.note-frame .note-statusbar {
+  border-top: 0;
+}
+.short-post_person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+  .people {
+    flex: auto;
+  }
+}
+.short-post_body {
+  border-bottom: 1px solid #efefef;
+  padding: 15px 0;
+  p {
+    color: #a1a1a1;
+    line-height: 12px;
+  }
+  a {
+    font-size: 10px;
+    color: #0054f0;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #003eb2;
+    }
+  }
+  img {
+    width: 100%;
+    margin-top: 10px;
+    -webkit-box-shadow: 0 0 1px #a4a4a4;
+    box-shadow: 0 0 1px #a4a4a4;
+    border: 1px solid #efefef;
+  }
+}
+.ui-widget {
+  .btn-activity {
+    background: transparent;
+    font-size: 12px;
+    color: #a1a1a1;
+    border: 0;
+    .fa-heart{
+      color: #d0021b;;
+    }
+    img {
+      height: 14px;
+      width: auto;
+      vertical-align: middle;
+    }
+    span {
+      padding-left: 7px;
+    }
+  }
+}
+.btn-more {
+  i {
+    font-size: 5px;
+  }
+}
+.short-post_footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.short-post_comments {
+  border-top: 1px solid #efefef;
+  margin: 0 -30px;
+  .short-post_person {
+    padding: 0 30px;
+    border-bottom: 1px solid #efefef;
+  }
+}
+.share-post {
+  display: flex;
+  align-items: center;
+  border: 1px solid #efefef;
+  cursor: pointer;
+  margin-top: 10px;
+  h6 {
+    color: #1b1d1f;
+    margin-bottom: 0;
+  }
+  img {
+    width: auto;
+    height: 110px;
+    margin: 0;
+  }
+  .share-post-text {
+    padding: 0 15px;
+  }
+}
+/********************************************* MEDIA *********************************************/
+
+
+@media all and (max-width: 1224px) {
+  .flex-container {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .sidebar {
+    &.sidebar-right {
+      order: -1;
+      top: 345px;
+      position: absolute;
+      left: 15px;
+      width: 260px;
+    }
+  }
+  .sidebar-float-left {
+    position: absolute;
+    left: 0;
+    width: 260px;
+    top: 400px;
+  }
+  .sidebar-calendar {
+    order: -1;
+    top: 345px;
+    position: absolute;
+    left: 15px;
+    width: 260px;
+  }
+  .center-container {
+    flex:0 0 calc(100% - 275px);
+    margin-right: 0;
+    &.mt15 {
+      margin-right: 0;
+    }
+  }
+}
+@media all and (max-width: 850px) {
+  .center-container {
+    flex: 0 0 calc(100% - 255px);
+  }
+  .sidebar {
+
+    flex: 0 0 225px;
+    &.sidebar-right {
+      width: 225px;
+    }
+  }
+  .sidebar-calendar{
+    flex: 0 0 225px;
+    width: 225px;
+  }
+}
+@media all and (max-width: 767px) {
+  .center-container {
+    flex: 0 0 100%;
+    margin: 0;
+    &.mt15 {
+      margin: 15px 0 0;
+    }
+  }
+  .sidebar-float-left {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
+  .sidebar-calendar {
+    width: 100%;
+    flex: 0 0 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    order: 2;
+    margin-top: 15px;
+    .datepicker {
+      display: none;
+    }
+  }
+}
+@media all and (max-width: 550px) {
+  .inner-content {
+    padding: 0 15px;
+  }
+  .short-post_comments {
+    margin: 0 -15px;
+  }
+}
+@media all and (max-width: 480px) {
+  .share-post {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 7px;
+  }
+  .short-post_person {
+    flex-direction: column;
+    align-items: inherit;
+    .time {
+      order:-1;
+      align-self: flex-end;
+      padding-top: 5px;
+    }
+  }
+  .people {
+    padding-top: 0;
+  }
+}

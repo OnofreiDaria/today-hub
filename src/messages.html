@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>Feed</title>
+
+</head>
+<body>
+<div class="main">
+    @@include('templates/menu.html')
+
+
+
+    <div class="container flex-container mt15">
+        <div class="sidebar profile-sidebar">
+            <div class="profile-photo">
+                <img src="img/photo.jpg" alt="">
+            </div>
+            <p class="profile-name">Dumitru Birchin</p>
+            <p class="profile-p">Perfume Tips Tricks</p>
+            <div class="connection-views">
+                <div class="connection-views_block">
+                    <p class="connection-views_number">649</p>
+                    <p class="profile-p">Connections</p>
+                </div>
+                <div class="connection-views_block">
+                    <p class="connection-views_number">149</p>
+                    <p class="profile-p">Views</p>
+                </div>
+            </div>
+            <button class="btn btn-white">View my profile</button>
+        </div><!-- END .sidebar profile-sidebar -->
+        <div class="center-container">
+            <div class="inner-content message-container">
+                <div class="search-header">
+                    <h5>People</h5>
+                    <select class="selectmenu">
+                        <option>All</option>
+                        <option>Last week</option>
+                        <option selected="selected">Last 7 days</option>
+                    </select>
+                </div>
+
+                <ul class="messages-list">
+                    <li class="people-list">
+                        <div class="people">
+                            <div class="profile-photo photo-small">
+                                <img src="img/photo.jpg" alt="">
+                            </div>
+                            <a href="" class="link-name">Ola Brock</a>
+                            <p class="text-grey">Radio Astronomy</p>
+                        </div>
+                        <p class="text-grey"><i class="fa fa-heart-o" aria-hidden="true"></i> 23 minutes</p>
+                    </li>
+                    <li class="people-list">
+                        <div class="people">
+                            <div class="profile-photo photo-small">
+                                <img src="img/photo.jpg" alt="">
+                            </div>
+                            <a href="" class="link-name">Ola Brock</a>
+                            <p class="text-grey">Radio Astronomy</p>
+                        </div>
+                        <p class="text-grey"><img src="img/post-message.png">23 minutes</p>
+                    </li>
+                    <li class="people-list">
+                        <div class="people">
+                            <div class="profile-photo photo-small">
+                                <img src="img/photo.jpg" alt="">
+                            </div>
+                            <a href="" class="link-name">Ola Brock</a>
+                            <p class="text-grey">Radio Astronomy</p>
+                        </div>
+                        <p class="text-grey"><img src="img/share.png" alt=""> 23 minutes</p>
+                    </li>
+                    <li class="people-list">
+                        <div class="people">
+                            <div class="profile-photo photo-small">
+                                <img src="img/photo.jpg" alt="">
+                            </div>
+                            <a href="" class="link-name">Ola Brock</a>
+                            <p class="text-grey">Radio Astronomy</p>
+                        </div>
+                        <p class="text-grey"><i class="fa fa-eye" aria-hidden="true"></i>23 minutes</p>
+                    </li>
+                    <li class="people-list">
+                        <div class="people">
+                            <div class="profile-photo photo-small">
+                                <img src="img/photo.jpg" alt="">
+                            </div>
+                            <a href="" class="link-name">Ola Brock</a>
+                            <p class="text-grey">Radio Astronomy</p>
+                        </div>
+                        <p class="text-grey"><img src="img/post-message.png">23 minutes</p>
+                    </li>
+
+                </ul>
+
+            </div>
+            <button class="btn btn-lg btn-grey">View (20) more </button>
+
+        </div><!-- END .center-container -->
+
+        <div class="sidebar sidebar-right">
+            <h6 class="title">Keep in touch</h6>
+            <div class="people">
+                <div class="profile-photo photo-small">
+                    <img src="img/photo.jpg" alt="">
+                </div>
+                <a href="" class="link-name">Edgar Ray</a>
+                <p class="text-grey">Restorative Dentist New York</p>
+            </div>
+            <div class="people">
+                <div class="profile-photo photo-small">
+                    <img src="img/photo.jpg" alt="">
+                </div>
+                <a href="" class="link-name">Rosie Hubbard</a>
+                <p class="text-grey">There Is No Competition</p>
+            </div>
+            <div class="people">
+                <div class="profile-photo photo-small">
+                    <img src="img/photo.jpg" alt="">
+                </div>
+                <a href="" class="link-name">Ola Brock</a>
+                <p class="text-grey">Radio Astronomy</p>
+            </div>
+            <div class="people">
+                <div class="profile-photo photo-small">
+                    <img src="img/photo.jpg" alt="">
+                </div>
+                <a href="" class="link-name">Lois McCarthy</a>
+                <p class="text-grey">Billboard Advertising</p>
+            </div>
+        </div><!-- END .sidebar sidebar-right -->
+    </div><!-- END .container.flex-container -->
+
+
+</div>
+
+@@include('templates/footer.html')
+</body>
+</html>

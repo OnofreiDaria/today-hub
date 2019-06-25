@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>Upcoming events</title>
+
+</head>
+<body>
+<div class="main">
+    @@include('templates/menu.html')
+    <div class="container">
+        @@include('templates/header.html')
+
+        <div class="flex-container">
+            <div class="sidebar-container">
+                @@include('templates/past-event-sidebar.html')
+            </div>
+
+
+                <div class="center-container mt15">
+                    <div class="tabs inner-tabs">
+                        <ul>
+                            <li><a href="#upcomingEvents">Upcoming events</a>
+                            </li>
+                            <li>
+                                <a href="#pastEvents">Past events</a>
+                            </li>
+                            <li><a href="#calendar">Calendar</a>
+                            </li>
+                        </ul>
+                        <div id="upcomingEvents">
+                            <div class="inner-tabs_info">
+                                <p class="text-blue">6 meet-ups nearby</p>
+                            </div>
+                            <div class="inner-content mt15">
+                                @@include('templates/events-list.html')
+                            </div><!-- END .inner-content -->
+
+
+                        </div>
+                        <div id="pastEvents">
+                            <div class="inner-tabs_info">
+                                <p class="text-blue">10 meet-ups nearby</p>
+                            </div>
+                            <div class="inner-content mt15">
+                                @@include('templates/events-list.html')
+                            </div><!-- END .inner-content -->
+
+                        </div>
+                        <div id="calendar" class="big-calendar">
+                            <div class="inner-tabs_info">
+                                <p class="text-blue">5 meet-ups nearby</p>
+                            </div>
+                            <div class="mt15">
+                                <div class="datepicker"></div>
+
+                            </div><!-- END .inner-content -->
+                            <div class="inner-content mt15">
+                                <ul class="events">
+                                    <li class="event">
+                                        <div class="event_description">
+                                            <p class="event_tag text-grey"><b>Chisinau automation & manual testting meetups</b></p>
+                                            <h6><a href="">Chisinau automation & manual testting meetups</a></h6>
+                                            <p class="text-grey">7 Members going</p>
+                                        </div>
+                                        <div class="event_date">
+                                            <p class="event_day text-blue">Wensday, May 16</p>
+                                            <p class="event_time">7:00 PM</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div><!-- END .center-container -->
+
+            <div class="sidebar-container sidebar-float-left">
+                @@include('templates/sidebar-similar-events.html')
+            </div>
+
+        </div>
+    </div><!-- END .container -->
+
+</div>
+
+@@include('templates/footer.html')
+</body>
+</html>

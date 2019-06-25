@@ -1,0 +1,84 @@
+<div class="inner-tabs_info">
+    <p class="text-blue">Feel the form to create new group</p>
+    <h5 class="form-title">What’s your new Meetup Group’s hometown?</h5>
+    <div class="input-group">
+        <label for="location">Location</label>
+        <input id="location" type="text" placeholder="Chisinau" class="big-input">
+    </div>
+    <h5 class="form-title">What will your Meetup be about?</h5>
+    <div class="input-group">
+        <label for="groupSearch">Location</label>
+        <input id="groupSearch" type="text" placeholder="Search for a topic" class="big-input">
+
+    </div>
+    <div class="group_tags">
+        <ul class="tags_list">
+            <li class="tag_name">
+                <a>Book Club
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="tag_name">
+                <a>Learning
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="tag_name active">
+                <a>Animation
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="tag_name">
+                <a>Dogs
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="tag_name">
+                <a>Fitness
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="tag_name">
+                <a>Moms
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="tag_name">
+                <a>Writing
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="tag_name">
+                <a>Diging Out
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <button class="btn btn-md btn-blue btn-round-corner">View More</button>
+    </div>
+    <h5 class="form-title">What will your Meetup’s name be?</h5>
+    <div class="input-group">
+        <label for="groupName">Name</label>
+        <input id="groupName" type="text" placeholder="Chisinau Entrepreneurship Meetup" class="big-input">
+    </div>
+    <div class="file-upload">
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+                <i class="fa fa-camera" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" src="#" alt="your image" />
+            <div class="image-title-wrap">
+                <button type="button" onclick="removeUpload()" class="remove-image btn-md">Remove <span class="image-title">Uploaded Image</span></button>
+            </div>
+        </div>
+    </div>
+    <h5 class="form-title">Describe who should join and what your Meetup will do</h5>
+    <div class="input-group">
+        <label for="groupDescription">Description</label>
+        <textarea id="groupDescription" type="text" placeholder="Want some inspiration?" class="big-input"></textarea>
+    </div>
+    <button class="btn btn-md btn-blue btn-round-corner float-right">Create</button>
+</div>

@@ -1,0 +1,252 @@
+.tabs {
+
+  &.ui-widget {
+    &.ui-widget-content {
+      border: 0;
+    }
+  }
+
+  &.ui-corner-all {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  &.ui-widget-content {
+    background: transparent;
+  }
+  .ui-widget-header {
+    background: transparent;
+    border: 0;
+  }
+  &.ui-tabs {
+    .ui-tabs-nav {
+      .ui-tabs-anchor {
+        padding: 30px 10px;
+      }
+
+    }
+  }
+  .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background: transparent;
+  }
+  .ui-state-default a, .ui-state-default a:link {
+    color: #a1a1a1;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid #0054f0;
+    }
+  }
+  .ui-state-active a, .ui-state-active a:link {
+    color: #1b1d1f;
+    border-bottom: 2px solid #0054f0;
+  }
+  .ui-helper-reset {
+    line-height: 1;
+  }
+}
+
+.ui-tabs .ui-tabs-nav  {
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+  padding: 0;
+  li {
+    float: none;
+    display: inline-block;
+    border: 0;
+    background: transparent;
+    margin-bottom: -5px;
+  }
+}
+.tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: -5px;
+}
+
+/* INNER TABS */
+  .tabs.inner-tabs {
+    &.ui-tabs {
+      .ui-tabs-nav {
+        background: #fff;
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #efefef;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        li {
+          flex: 0 0 33.33%;
+        }
+        .ui-tabs-anchor {
+          padding: 20px 7px;
+        }
+      }
+      .ui-tabs-panel {
+        padding: 0;
+      }
+    }
+    .ui-state-default a, .ui-state-default a:link {
+      font-size: 14px;
+    }
+    .inner-tabs_info {
+      background: #fff;
+      padding: 30px ;
+      border-bottom: 1px solid #efefef;
+      border-left: 1px solid #efefef;
+      border-right: 1px solid #efefef;
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+  .tabs.inner-tabs.group-tabs {
+    &.ui-tabs {
+      .ui-tabs-nav {
+        display: flex;
+        justify-content: space-between;
+        li {
+          flex: 0 0 auto;
+        }
+        .ui-tabs-anchor {
+          padding: 20px 7px;
+        }
+      }
+    }
+  }
+  .tabs.inner-tabs.calendar-tabs {
+    &.ui-tabs {
+      .ui-tabs-nav {
+        display: flex;
+        justify-content: space-between;
+        li {
+          flex: 0 0 25%;
+        }
+        .ui-tabs-anchor {
+          padding: 20px 7px;
+        }
+      }
+    }
+  }
+  .tab-icon {
+    height: 16px;
+    width: auto;
+    vertical-align: middle;
+  }
+  .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin-bottom: -2px;
+  }
+  .ui-tabs .ui-tabs-panel {
+    padding:30px 0;
+  }
+
+#update {
+  textarea {
+    width: 100%;
+    color: #a1a1a1;
+    font-size: 14px;
+    font-weight: 700;
+    border:0;
+    resize: none;
+  }
+}
+
+.ui-tabs .ui-tabs-panel {
+  padding:30px  0;
+}
+.ui-tabs {
+  padding: 0;
+}
+/********************************************* MEDIA *********************************************/
+@media all and (max-width: 991px) {
+  .tabs.group-tabs {
+    &.ui-tabs {
+      .ui-tabs-nav {
+        flex-wrap: wrap;
+        li {
+          flex: 0 0 32%;
+          width: 32%;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 550px) {
+  .tabs {
+    &.ui-tabs {
+      .ui-tabs-nav {
+        li {
+          width: 100%;
+        }
+      }
+    }
+    .ui-state-default a, .tabs .ui-state-default a:link {
+      font-size: 12px;
+
+    }
+    &.ui-tabs {
+      .ui-tabs-nav {
+        .ui-tabs-anchor {
+          padding: 15px 10px;
+          width: 100%;
+        }
+
+      }
+    }
+  }
+  .tabs.inner-tabs {
+    &.ui-tabs {
+      .ui-tabs-nav {
+        padding: 0 15px;
+        .ui-tabs-anchor {
+          padding: 15px 5px;
+        }
+      }
+    }
+    .ui-state-default a, .ui-state-default a:link {
+      font-size: 12px;
+    }
+  }
+  .tab-icon {
+    height: 12px;
+  }
+
+}
+@media all and (max-width: 480px) {
+
+  .tabs.inner-tabs {
+    &.ui-tabs {
+      .ui-tabs-nav {
+        .ui-tabs-anchor {
+          padding: 12px 3px;
+        }
+      }
+    }
+    .ui-state-default a, .ui-state-default a:link {
+      font-size: 10px;
+    }
+  }
+  .tab-icon {
+    height: 10px;
+  }
+
+}
+@media all and (max-width: 360px) {
+
+  .tab-icon {
+    display: none;
+  }
+  .tabs.inner-tabs.calendar-tabs {
+    &.ui-tabs {
+      .ui-tabs-nav {
+        flex-wrap: wrap;
+        li {
+          flex: 0 0 48%;
+        }
+      }
+    }
+  }
+
+
+}
